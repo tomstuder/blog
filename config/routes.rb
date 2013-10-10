@@ -1,5 +1,4 @@
 Blog::Application.routes.draw do
-  resources :pages
 
   devise_for :users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
@@ -18,6 +17,7 @@ Blog::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :posts
+  resources :pages
 
   # Example resource route with options:
   #   resources :products do
